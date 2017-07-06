@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SystemInfo</title>
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container">
+    <h2>You can never know whats you <em>System Configuration</em>:</h2>
+    <h3>for Your information: this is <strong>your system configuration</strong></h3>
+    <div id="output"></div>
+
+</div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -
+    <script type="text/javascript">
+    var node = process.versions.node;
+    var chrome = process.versions.chrome;
+    var electron = process.versions.electron; 
+    var computerName = process.env.USERDOMAIN;
+     var username = process.env.USERNAME;
+     var homePath = process.env.HOME;
+     var systemRoot = process.env.SYSTEMROOT;
+      var systemDrive = process.env.SYSTEMDRIVE;
+        var output = '<h3 class ="page-header"> App Version Data:</h3> <ul class = "list-group" > <li id="node-output" class="list-group-item">Node: '+ node +'</li> \
+      <li id="chrome-output" class="list-group-item">chrome: '+ chrome +'</li><li id="electron-output" class="list-group-item">electron: '+ electron +'</li></ul> \
+      <h3 class ="page-header"> System information :</h3> <ul class = "list-group" > <li id="computername-output" class="list-group-item">Computer Name: '+ computerName +'</li> \
+      <li id="username-output" class="list-group-item">User Name: '+ username +'</li><li id="homepath-output" class="list-group-item">User Home Path: '+ homePath +'</li><li id="systemroot-output" class="list-group-item">System Root: '+ systemRoot +'</li><li id="systemdrive-output" class="list-group-item">System Drive: '+ systemDrive +'</li></ul>';
+        document.getElementById('output').innerHTML = output;
+    </script>
+
+    </script>
+   <script>
+  require('./renderer.js');
+   </script>
+</body>
+
+
+
+</html> 

@@ -1,0 +1,17 @@
+{
+  "name": "sysinfoapp",
+  "version": "0.0.0",
+  "description": "NodejsConsoleApp1",
+  "main": "main.js",
+  "author": {
+    "name": "ANAND VIDVAT"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build":"electron-packager . Esys"
+  },
+  "dependencies": {
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2"
+  }
+}
