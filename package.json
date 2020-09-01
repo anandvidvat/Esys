@@ -11,7 +11,7 @@
     "build":"electron-packager . Esys"
   },
   "dependencies": {
-    "electron": "^1.6.11",
+    "electron": "^10.1.1",
     "electron-packager": "^8.7.2"
   }
 }
